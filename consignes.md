@@ -110,9 +110,16 @@ Ces trois dossiers doivent être copiés chacun sous le dossier *Citations* (cli
 
 L'architecture que l'on doit trouver est donc la suivante :
 
-| URFIST_Obsidian > .obsidian > plugins > Citations \> - main.js  
-|                                                   \> - manifest.json  
-|                                                   \> - styles.css  
+```
+URFIST_Obsidian
+| notes > plugins > Citations \> - main.js  
+|
+└───.obsidian
+|   └─── plugins
+|   |    └─── Citations
+|   |        | main.js
+|   |        | manifest.json
+|   |        | styles.css  
                                                   
 Fermer et rouvrir Obsidian, ouvrir un coffre, sélectionner URFIST-obsidian
 Activer le plugin Citations et suivre les indications pour le paramétrer.
