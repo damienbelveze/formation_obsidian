@@ -119,7 +119,8 @@ URFIST_Obsidian
 |   |    └─── Citations
 |   |        | main.js
 |   |        | manifest.json
-|   |        | styles.css  
+|   |        | styles.css
+```
                                                   
 Fermer et rouvrir Obsidian, ouvrir un coffre, sélectionner URFIST-obsidian
 Activer le plugin Citations et suivre les indications pour le paramétrer.
