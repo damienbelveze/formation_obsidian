@@ -102,7 +102,7 @@ Sous *plugins*, créer un dossier *Citations* (cf. la liste des noms des plugins
 Aller ensuite sur la [page de livraison du plugin](https://github.com/hans/obsidian-citation-plugin/releases/tag/0.4.4)
 tout en bas de la page, on a trois dossiers :
 
-- main.js
+- main.js  
 - manifest.json
 - styles.css
 
@@ -110,9 +110,9 @@ Ces trois dossiers doivent être copiés chacun sous le dossier *Citations* (cli
 
 L'architecture que l'on doit trouver est donc la suivante :
 
-URFIST_Obsidian > .obsidian > plugins > Citations \> - main.js
-                                                  \> - manifest.json
-                                                  \> - styles.css
+URFIST_Obsidian > .obsidian > plugins > Citations \> - main.js  
+                                                  \> - manifest.json  
+                                                  \> - styles.css  
                                                   
 Fermer et rouvrir Obsidian, ouvrir un coffre, sélectionner URFIST-obsidian
 Activer le plugin Citations et suivre les indications pour le paramétrer.
