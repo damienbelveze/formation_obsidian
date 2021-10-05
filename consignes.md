@@ -88,8 +88,33 @@ Charger le fichier .bib (on va le nommer pour la commodité de l'exercice **URFI
 
 ## régler le plugin Citation dans Obsidian
 
+### chargement de Citation dans Obsidian
+
 Aller dans Obsidian
 Dans les plugins tiers, chercher le plugin "Citation" de Jon Gauthier. L'installer et l'activer (ne pas oublier d'activer les plugins tiers sinon ils ne fonctionneront pas).
+
+### en cas de bloquage par le parefeu
+
+Si vous êtes bloqué.e par le parefeu de votre ordinateur, et que vous ne pouvez pas ou ne voulez pas modifier les règles du pare-feu. Tous les plugins communautaires d'Obsidian peuvent s'installer manuellement. Voici comment faire avec le plugin Citations
+
+Dans votre coffre obsidian, sous le dossier *.obsidian*, créer un dossier *plugins*. C'est à cet endroit que les fichiers relatifs aux plugins doivent se trouver
+Sous *plugins*, créer un dossier *Citations* (cf. la liste des noms des plugins communautaires déjà enregistrés [sur Github](https://github.com/obsidianmd/obsidian-releases/blob/master/community-plugins.json))
+Aller ensuite sur la [page de livraison du plugin](https://github.com/hans/obsidian-citation-plugin/releases/tag/0.4.4)
+tout en bas de la page, on a trois dossiers :
+- main.js
+- manifest.json
+- styles.css
+Ces trois dossiers doivent être copiés chacun sous le dossier *Citations* (clic droit sur chacun > enregistrer la cible du lien sous > aller dans le répertoire *Citations* > coller)
+
+L'architecture que l'on doit trouver est donc la suivante :
+
+URFIST_Obsidian > .obsidian > plugins > Citations \> - main.js
+                                                  \> - manifest.json
+                                                  \> - styles.css
+Fermer et rouvrir Obsidian, ouvrir un coffre, sélectionner URFIST-obsidian
+Activer le plugin Citations et suivre les indications pour le paramétrer.
+
+### paramétrage du plugin Citations
 
 Aller ensuite dans les options des plugins, ouvrir les options du plugin Citations :
 - Opter pour le format Biblatex
