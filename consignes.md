@@ -101,9 +101,11 @@ Dans votre coffre obsidian, sous le dossier *.obsidian*, créer un dossier *plug
 Sous *plugins*, créer un dossier *Citations* (cf. la liste des noms des plugins communautaires déjà enregistrés [sur Github](https://github.com/obsidianmd/obsidian-releases/blob/master/community-plugins.json))
 Aller ensuite sur la [page de livraison du plugin](https://github.com/hans/obsidian-citation-plugin/releases/tag/0.4.4)
 tout en bas de la page, on a trois dossiers :
+
 - main.js
 - manifest.json
 - styles.css
+
 Ces trois dossiers doivent être copiés chacun sous le dossier *Citations* (clic droit sur chacun > enregistrer la cible du lien sous > aller dans le répertoire *Citations* > coller)
 
 L'architecture que l'on doit trouver est donc la suivante :
@@ -111,6 +113,7 @@ L'architecture que l'on doit trouver est donc la suivante :
 URFIST_Obsidian > .obsidian > plugins > Citations \> - main.js
                                                   \> - manifest.json
                                                   \> - styles.css
+                                                  
 Fermer et rouvrir Obsidian, ouvrir un coffre, sélectionner URFIST-obsidian
 Activer le plugin Citations et suivre les indications pour le paramétrer.
 
@@ -151,13 +154,13 @@ Pour réaliser la page de titre, on peut utiliser un entête en YAML :
 commencer la note par :
 
 ---
-title: Google News
-subtitle: exercice pour maîtriser Obsidian
-date: 30/09/2021
-author : indiquericivotrenom
+title: Google News  
+subtitle: exercice pour maîtriser Obsidian  
+date: 30/09/2021  
+author : indiquericivotrenom  
 ---
 
-Renvoyer la même commande dans le terminal (flêche vers le haut + entrée)
+Renvoyer la même commande dans le terminal (flêche vers le haut + entrée)  
 Observer les différences.
 
 Créer un dossier à la racine du coffre nommé csl
