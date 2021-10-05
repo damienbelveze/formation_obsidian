@@ -112,7 +112,7 @@ L'architecture que l'on doit trouver est donc la suivante :
 
 ```
 URFIST_Obsidian
-| notes > plugins > Citations \> - main.js  
+| notes.md  
 |
 └───.obsidian
 |   └─── plugins
