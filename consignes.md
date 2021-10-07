@@ -86,14 +86,19 @@ Dans le coffre, vous avez des documents invisibles dans Obsidian parce qu'ils ne
 Vous allez créer des notes dans Obsidian dont le nom sera identique au nom de ces fichiers.
 Vous allez copier le contenu du fichier .odt et le coller dans la nouvelle note qui lui correspond.
 Est-ce que le copier-coller permet de retrouver la forme et la structure du document ? Si non, comment peut-on procéder ?
-Faites de même avec les autres documents en .odt
-Intégrer le tableau (tableau.ods) à la note Google News en utilisant le service [Exceltomarkdown](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/)
-Créer des liens ([[wikiliens]]) à l'intérieur des trois notes. Chaque wikilien crée un lien et un rétrolien.
 
-Dans le document krishna_bharat.odt, sauvegarder l'image de KB (avec le nom de fichier krishna_bharat.jpg) et envoyez-la dans le coffre d'Obsidian, dans le dossier image
+Pour retrouver dans Obsidian la forme du document en format open document, vous pouvez vous référer au *Mode d'emploi d'obsidian* dans votre coffre. Ce n'est pas un mode d'emploi ni officiel, ni même complet. C'est la synthèse de toutes les informations que j'ai eu à mobiliser pour me permettre de travailler avec Obsidian comme je le souhaitais.
+Une version à jour de ce document se trouve sur [Github](https://github.com/damienbelveze/Obsidian3/blob/main/Mode%20d'emploi%20d'Obsidian.md)
 
-Dans la note consacrée à Krishna Bharat, changer le chemin vers la photo de Krishna Bharat : remplacer le chemin existant par le nouveau chemin (relatif) : images/Krishna_Bharat.jpg
-Ajouter entre les crochets un texte alternatif (Krishna Bharat)
+- Mettez en forme dans Obsidian la note Google News, pour qu'elle ait la structure du document .odt
+
+- Intégrer le tableau (tableau.ods) à la note Google News en utilisant le service [Exceltomarkdown](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/)  
+
+- Créer des liens ([[wikiliens]]) à l'intérieur des trois notes. Chaque wikilien crée un lien et un rétrolien.  
+
+- Dans le document krishna_bharat.odt, sauvegarder l'image de KB (avec le nom de fichier krishna_bharat.jpg) et envoyez-la dans le coffre d'Obsidian, dans le dossier *image*  
+
+- Dans la note consacrée à Krishna Bharat, changer le chemin vers la photo de Krishna Bharat : remplacer le chemin existant par le nouveau chemin (relatif) : images/Krishna_Bharat.jpg. Ajouter entre les crochets un texte alternatif (Krishna Bharat)  
 
 # Lien avec Zotero
 
@@ -213,7 +218,7 @@ Créer un dossier à la racine du coffre nommé csl
 dans ce dossier, télécharger la feuille de style suivante ieee (la télécharger [depuis le site Zotero](https://www.zotero.org/styles/ieee?source=1) en format .csl, envoyer ce fichier csl dans le dossier csl.
 
 ```
-pandoc google_news.md --from html --to pdf --bibliography=URFIST_obsidian.bib --csl=csl\ieee.csl --pdf-engine=xelatex --citeproc -f markdown+smart -o google_news.pdf
+pandoc "google news.md" --from html --to pdf --bibliography=URFIST_obsidian.bib --csl=csl\ieee.csl --pdf-engine=xelatex --citeproc -f markdown+smart -o google_news.pdf
 ```
 La conversion devrait cette fois prendre en compte la citation et la référence bibliographique.
 
@@ -221,4 +226,4 @@ La conversion devrait cette fois prendre en compte la citation et la référence
 
 bracket-eraser est un petit script qui vous permet deux choses :
 - vous débarrasser des liens sous la forme [[liens]] (=wikiliens) qui restent dans le document en pdf après conversion avec Pandoc dans les exemples précédents
-- utiliser pandoc de façon guidée avec une interface graphique très basique (menus). Pour ajouter de nouvelles fonctionnalités, il faudra modifier le script. 
+- utiliser pandoc de façon guidée avec une interface graphique très basique (menus). Pour ajouter de nouvelles fonctionnalités, il faudra modifier le script.
