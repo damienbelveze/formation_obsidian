@@ -1,8 +1,10 @@
 ---
-title: Plan atelier Obsidian
+title: Prenez des notes de manière plus efficace avec Obsidian en vous initiant au langage markdown
+subtitle: Consignes à suivre
 author: Damien Belvèze
 date: 21/09/2021
 ---
+
 
 # tour de table
 
@@ -19,7 +21,7 @@ Obsidian permet de gérer des notes, des notes de lecture.
 
 # présentation
 
-Présentation de la méthode Zettelkasten et des outis de notes à rétroliens
+Présentation de la méthode Zettelkasten et des outils de notes à rétroliens
 
 # Accès aux supports d'activité
 
@@ -30,9 +32,7 @@ Si vous utilisez votre propre ordinateur, voici comment procéder pour récupér
 
 à l'endroit où vous souhaitez charger les fichiers (par exemple sur le bureau), ouvrez la console bash de git (Clic droit) et copiez la commande suivante :
 
-```
 git clone https://github.com/damienbelveze/URFIST_obsidian.git
-```
 
 ## si vous n'utilisez pas git
 
@@ -47,10 +47,12 @@ télécharger l'archive et extrayez-la.
 - references (dossier vide)
 - batonnage_depeches (fichier odt)
 - consignes (ce fichier, en markdown)
+- consignes (le même fichier mais en PDF)
 - google_news (fichier odt)
 - krishna_bharat (fichier odt)
 - methode_zettelkasten (fichier markdown)
 - tableau (fichier ods)
+- mode d'emploi d'Obsidian (fichier markdown)
 
 # création du coffre
 
@@ -63,13 +65,13 @@ Aller dans [ce répertoire](https://github.com/damienbelveze/URFIST_obsidian) so
 cliquer sur code et choisir l'option télécharger en format Zip
 charger ce dossier zip sur le bureau. Il a pour nom URFIST_Obsidian_main.zip
 dézipper l'archive.
-Vous avez désormais sur le bureau deux dossiers :
-- URFIST_Obsidian
-- URFIST_Obsidian_main
+Vous avez désormais sur le bureau deux dossiers :  
+- URFIST_Obsidian  
+- URFIST_Obsidian_main  
 
 copier les fichiers et dossiers qui sont sous URFIST_Obsidian_main et les coller sous URFIST_obsidian
 
-Lorsque vous ouvrez dans Obsidian le coffre URFIST_Obsidian, vous devriez voir apparaître désormais plusieurs fichiers et un dossier dont le nom est images.
+Lorsque vous ouvrez dans Obsidian le coffre URFIST_Obsidian, vous devriez voir apparaître désormais plusieurs fichiers et un dossier dont le nom est *images*.
 
 Dans Obsidian, Aller dans les paramètres > plugins principaux > mettre sur *on* les plugins suivants :
 
@@ -82,8 +84,8 @@ Aller dans raccourcis clavier, chercher *Diapositives*, cliquer sur l'astérique
 
 # Initiation au markdown
 
-Dans le coffre, vous avez des documents invisibles dans Obsidian parce qu'ils ne sont pas en format markdown (.md), mais en format lisible par un traitement de texte (.odt).
-Vous allez créer des notes dans Obsidian dont le nom sera identique au nom de ces fichiers.
+Dans le coffre, vous avez des documents invisibles dans Obsidian parce qu'ils ne sont pas en format markdown (.md) ou PDF, mais en format lisible par un traitement de texte (.odt).
+Vous allez créer des notes dans Obsidian dont le nom sera identique au nom de ces fichiers. Dans obsidian des fichiers correspondants en markdown (.md) seront automatiquement créés. 
 Vous allez copier le contenu du fichier .odt et le coller dans la nouvelle note qui lui correspond.
 Est-ce que le copier-coller permet de retrouver la forme et la structure du document ? Si non, comment peut-on procéder ?
 
@@ -105,10 +107,10 @@ Une version à jour de ce document se trouve sur [Github](https://github.com/dam
 ## installer le plugin Betterbibtex dans Zotero
 
 On va à présent faire une copie synchronisée de votre bibliothèque Zotero dans Obsidian.
-Pour cela on a besoin de trois choses :
-- une bibliothèque Zotero avec des références dedans
-- charger dans Zotero le plugin betterbibtex
-- charger dans Obsidian le plugin Citations (plugin communautaire)
+Pour cela on a besoin de trois choses :  
+- une bibliothèque Zotero avec des références dedans (fichier .bib)
+- charger dans __Zotero__ le plugin **betterbibtex**  
+- charger dans __Obsidian__ le plugin **Citations** (plugin communautaire)  
 
 Ouvrez Zotero.
 Vous pouvez soit vous connecter avec votre compte Zotero et télécharger toutes vos références sur cette instance ou bien ne pas vous connecter et commencer l'exercice avec une bibliothèque vide.
@@ -117,17 +119,18 @@ Dans les deux cas, aller chercher la référence mentionnée dans la note sur Go
 Intégrer cette référence dans Zotero
 
 Onn va à présent charger le plugin betterbibtex dans Zotero :
-aller sur la page suivante : https://github.com/retorquere/zotero-better-bibtex/releases/tag/v5.5.1
-clic-droit sur le fichier .xpi (sauvegarder en tant que / save file as > envoyer le fichier sur le bureau)
-retour dans Zotero > Outils > Extensions > ajouter > install add-on from file | sélectionner le fichier .xpi ce qui va installer l'extension betterbibtex dans zotero
-Dans Zotero, Aller ensuite sur *Ma bibliothèque*, ciquer droit, choisir *exporter ma bibliothèque*, sélectionner le format *Better Bibtex* et cocher l'option *garder à jour* (ainsi chaque fois que vous ajouterez une référence dans Zotero elle sera également disponible dans Obsidian)
-Charger le fichier .bib (on va le nommer pour la commodité de l'exercice **URFIST_obsidian.bib**) résultant de cette opération à la racine du coffre.
+1. aller sur la page suivante : https://github.com/retorquere/zotero-better-bibtex/releases/tag/v5.5.1  
+2. clic-droit sur le fichier .xpi (sauvegarder en tant que / save file as > envoyer le fichier sur le bureau)  
+3. retour dans Zotero > Outils > Extensions > ajouter > install add-on from file | sélectionner le fichier .xpi ce qui va installer l'extension betterbibtex dans zotero  
+4. Dans Zotero, Aller ensuite sur *Ma bibliothèque*, ciquer droit, choisir *exporter ma bibliothèque*, sélectionner le format *Better Bibtex* et cocher l'option *garder à jour* (ainsi chaque fois que vous ajouterez une référence dans Zotero elle sera également disponible dans Obsidian)  
+5. Charger le fichier .bib (on va le nommer pour la commodité de l'exercice **URFIST_obsidian.bib**) résultant de cette opération à la racine du coffre.  
 
 ## régler le plugin Citation dans Obsidian
 
 ### chargement de Citation dans Obsidian
 
 Aller dans Obsidian
+
 Dans les plugins tiers, chercher le plugin *Citations* de Jon Gauthier. L'installer et l'activer (ne pas oublier d'activer les plugins tiers sinon ils ne fonctionneront pas).
 
 ### en cas de blocage par le parefeu
@@ -139,25 +142,16 @@ Sous *plugins*, créer un dossier *Citations* (cf. la liste des noms des plugins
 Aller ensuite sur la [page de livraison du plugin](https://github.com/hans/obsidian-citation-plugin/releases/tag/0.4.4)
 tout en bas de la page, on a trois dossiers :
 
-- main.js  
-- manifest.json
-- styles.css
+- main.js    
+- manifest.json  
+- styles.css  
 
 Ces trois dossiers doivent être copiés chacun sous le dossier *Citations* (clic droit sur chacun > enregistrer la cible du lien sous > aller dans le répertoire *Citations* > coller)
 
 L'architecture que l'on doit trouver est donc la suivante :
 
-```
-URFIST_Obsidian
-| fichiers listés ci-dessus  
-|
-└───.obsidian
-|   └─── plugins
-|   |    └─── Citations
-|   |        | main.js
-|   |        | manifest.json
-|   |        | styles.css
-```
+![arborescence de fichiers](images/arborescence.png)
+
 
 - Fermer et rouvrir Obsidian, ouvrir un coffre, sélectionner URFIST-obsidian  
 - désactivez le mode sans échec pour permettre le chargement du plugin
@@ -166,10 +160,11 @@ URFIST_Obsidian
 
 ### paramétrage du plugin Citations
 
-Aller ensuite dans les options des plugins, ouvrir les options du plugin Citations :
-- Opter pour le format Biblatex
-- Dans le paramètre Citation Database Path, indiquer le chemin absolu vers le fichier .bib mentionné plus haut (un chemin absolu commence par désigner un disque (C:, D: E:, etc.).
-- Dans les préférences du plugin Citations, au paramètre *Literature Note Folder* remplacer le texte existant par references (nom d'un dossier qui a été téléchargé depuis le Github)
+Aller ensuite dans les options des plugins, ouvrir les options du plugin *Citation*s :
+
+- Opter pour le format Biblatex  
+- Dans le paramètre Citation Database Path, indiquer le chemin absolu vers le fichier .bib mentionné plus haut (un chemin absolu commence par désigner un disque (C:, D: E:, etc.)  
+- Dans les préférences du plugin Citations, au paramètre *Literature Note Folder* remplacer le texte existant par references (nom d'un dossier qui a été téléchargé depuis le Github)  
 - dans les raccourcis-clavier, paramétrer un raccourci pour insérer une citation dans un texte (insert literature note)
 
 Utiliser ce raccourci-clavier, nouvellement créé pour insérer au bon endroit de la note sur Google News la référence à Smyrnaios et Rebillard
@@ -181,9 +176,9 @@ Utiliser ce raccourci-clavier, nouvellement créé pour insérer au bon endroit 
 Pandoc est normalement installé sur votre ordinateur.
 C'est un programme qui n'a pas d'interface graphique, on l'utilise donc en lignes de commande à partir d'un interpréteur de lignes de commande.
 Ouvrir l'interpréteur dans un dossier :
-- GNU/Linux : Ctrl+Alt+T
-- Windows : shift+clicdroit > ouvrir la fenêtre powershell ici
-- Mac : command + espace > sélectionner *Terminal* puis naviguer avec la commande *cd* jusqu'au bon répertoire.
+- GNU/Linux : Ctrl+Alt+T  
+- Windows : shift+clicdroit > *ouvrir la fenêtre powershell ici*    
+- Mac : command + espace > sélectionner *Terminal* puis naviguer avec la commande *cd* jusqu'au bon répertoire.  
 
 conversion de la note sur Google News en PDF
 
@@ -204,12 +199,12 @@ Pour réaliser la page de titre, on peut utiliser un entête en YAML :
 
 commencer la note par :
 
----
+\-\-\-
 title: Google News  
 subtitle: exercice pour maîtriser Obsidian  
 date: 30/09/2021  
 author : indiquericivotrenom  
----
+\-\-\-
 
 Renvoyer la même commande dans le terminal (flêche vers le haut + entrée)  
 Observer les différences.
@@ -218,8 +213,10 @@ Créer un dossier à la racine du coffre nommé csl
 dans ce dossier, télécharger la feuille de style suivante ieee (la télécharger [depuis le site Zotero](https://www.zotero.org/styles/ieee?source=1) en format .csl, envoyer ce fichier csl dans le dossier csl.
 
 ```
-pandoc "google news.md" --from html --to pdf --bibliography=URFIST_obsidian.bib --csl=csl\ieee.csl --pdf-engine=xelatex --citeproc -f markdown+smart -o google_news.pdf
+pandoc "google news.md" --from html --to pdf --bibliography=URFIST_obsidian.bib
+--csl=csl\ieee.csl --pdf-engine=xelatex --citeproc -f markdown+smart -o google_news.pdf
 ```
+
 La conversion devrait cette fois prendre en compte la citation et la référence bibliographique.
 
 ## convertir avec pandoc en utilisant bracket-eraser
@@ -227,3 +224,20 @@ La conversion devrait cette fois prendre en compte la citation et la référence
 bracket-eraser est un petit script qui vous permet deux choses :
 - vous débarrasser des liens sous la forme [[liens]] (=wikiliens) qui restent dans le document en pdf après conversion avec Pandoc dans les exemples précédents
 - utiliser pandoc de façon guidée avec une interface graphique très basique (menus). Pour ajouter de nouvelles fonctionnalités, il faudra modifier le script.
+Si l'exécutable (bracket-eraser.exe) ne fonctionne pas à cause d'un parefeu, testez le script dans une fenêtre powershell
+
+
+```
+./script.ps1
+```
+
+Si la console ne vous permet pas d'exécuter un script, changer les permissions de powershell:
+Dans Powershell:
+
+
+Get-ExecutionPolicy
+
+
+Sélectionner remotesigned
+
+N'hésitez pas à me solliciter à tous les moments du cours afin que je vous vienne en aide.
