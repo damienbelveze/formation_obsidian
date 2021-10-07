@@ -13,12 +13,44 @@ Qui êtes vous ? qu'est-ce que vous pensez qu'Obsidian peut vous apporter ?
 Obsidian permet de gérer des notes, des notes de lecture.
 
 - l'un des objectifs de cette session est d'apprendre à s'en servir pour prendre des notes
-- l'autre objectif est de s'initier au plain text et à la syntaxe markdown.
+- l'autre objectif est de s'initier au *plain text* et à la syntaxe markdown.
 - enfin on terminera en parlant de pandoc et de l'écriture scientifique (comportant des références bibliographiques notamment)
+- Zotero et LaTeX sont libres et gratuits. Obsidian n'est pas libre mais il fonctionne bien avec les deux premiers. L'un des objectifs de la session est de vous faire prendre conscience de travailler avec des formats ouverts et interopérables.
 
 # présentation
 
 Présentation de la méthode Zettelkasten et des outis de notes à rétroliens
+
+# Accès aux supports d'activité
+
+Normalement, vous devriez trouver les supports sur le bureau de l'ordinateur que l'URFIST met à votre disposition.
+Si vous utilisez votre propre ordinateur, voici comment procéder pour récupérer ces supports :
+
+## si vous avez git sur votre machine
+
+à l'endroit où vous souhaitez charger les fichiers (par exemple sur le bureau), ouvrez la console bash de git (Clic droit) et copiez la commande suivante :
+
+```
+git clone https://github.com/damienbelveze/URFIST_obsidian.git
+```
+
+## si vous n'utilisez pas git
+
+Aller sur le répertoire du cours sur github (https://github.com/damienbelveze/URFIST_obsidian)
+cliquer sur le bouton vert "code", sélectionnez *Download zip*
+télécharger l'archive et extrayez-la.
+
+## Liste des fichiers et des dossiers dans le support
+
+- bracket eraser (dossier contenant un exécutable, le script de cet exécutable et une instruction (fichier REad.me))
+- images (dossier contenant quelques images)
+- references (dossier vide)
+- batonnage_depeches (fichier odt)
+- consignes (ce fichier, en markdown)
+- google_news (fichier odt)
+- krishna_bharat (fichier odt)
+- methode_zettelkasten (fichier markdown)
+- tableau (fichier ods)
 
 # création du coffre
 
@@ -83,7 +115,7 @@ Onn va à présent charger le plugin betterbibtex dans Zotero :
 aller sur la page suivante : https://github.com/retorquere/zotero-better-bibtex/releases/tag/v5.5.1
 clic-droit sur le fichier .xpi (sauvegarder en tant que / save file as > envoyer le fichier sur le bureau)
 retour dans Zotero > Outils > Extensions > ajouter > install add-on from file | sélectionner le fichier .xpi ce qui va installer l'extension betterbibtex dans zotero
-Dans Zotero, Aller ensuite sur *Ma bibliothèque*, ciquer droit, choisir *exporter ma bibliothèque*, sélectionner le format *better biblatex* et cocher l'option *garder à jour* (ainsi chaque fois que vous ajouterez une référence dans Zotero elle sera également disponible dans Obsidian)
+Dans Zotero, Aller ensuite sur *Ma bibliothèque*, ciquer droit, choisir *exporter ma bibliothèque*, sélectionner le format *Better Bibtex* et cocher l'option *garder à jour* (ainsi chaque fois que vous ajouterez une référence dans Zotero elle sera également disponible dans Obsidian)
 Charger le fichier .bib (on va le nommer pour la commodité de l'exercice **URFIST_obsidian.bib**) résultant de cette opération à la racine du coffre.
 
 ## régler le plugin Citation dans Obsidian
@@ -91,9 +123,9 @@ Charger le fichier .bib (on va le nommer pour la commodité de l'exercice **URFI
 ### chargement de Citation dans Obsidian
 
 Aller dans Obsidian
-Dans les plugins tiers, chercher le plugin "Citation" de Jon Gauthier. L'installer et l'activer (ne pas oublier d'activer les plugins tiers sinon ils ne fonctionneront pas).
+Dans les plugins tiers, chercher le plugin *Citations* de Jon Gauthier. L'installer et l'activer (ne pas oublier d'activer les plugins tiers sinon ils ne fonctionneront pas).
 
-### en cas de bloquage par le parefeu
+### en cas de blocage par le parefeu
 
 Si vous êtes bloqué.e par le parefeu de votre ordinateur, et que vous ne pouvez pas ou ne voulez pas modifier les règles du pare-feu. Tous les plugins communautaires d'Obsidian peuvent s'installer manuellement. Voici comment faire avec le plugin Citations
 
@@ -112,7 +144,7 @@ L'architecture que l'on doit trouver est donc la suivante :
 
 ```
 URFIST_Obsidian
-| notes.md  
+| fichiers listés ci-dessus  
 |
 └───.obsidian
 |   └─── plugins
@@ -121,9 +153,11 @@ URFIST_Obsidian
 |   |        | manifest.json
 |   |        | styles.css
 ```
-                                                  
-Fermer et rouvrir Obsidian, ouvrir un coffre, sélectionner URFIST-obsidian
-Activer le plugin Citations et suivre les indications pour le paramétrer.
+
+- Fermer et rouvrir Obsidian, ouvrir un coffre, sélectionner URFIST-obsidian  
+- désactivez le mode sans échec pour permettre le chargement du plugin
+- Activer le plugin *Citations* et suivre les indications pour le paramétrer (voir ci-dessous)  
+
 
 ### paramétrage du plugin Citations
 
@@ -136,6 +170,8 @@ Aller ensuite dans les options des plugins, ouvrir les options du plugin Citatio
 Utiliser ce raccourci-clavier, nouvellement créé pour insérer au bon endroit de la note sur Google News la référence à Smyrnaios et Rebillard
 
 # conversion avec pandoc
+
+## convertir avec pandoc en lignes de commande
 
 Pandoc est normalement installé sur votre ordinateur.
 C'est un programme qui n'a pas d'interface graphique, on l'utilise donc en lignes de commande à partir d'un interpréteur de lignes de commande.
@@ -150,7 +186,9 @@ On part du principe que LaTeX est installé et fonctionne sur la machine (sinon 
 
 ouvrir un terminal dans le même répertoire que cette note :
 
+```
 pandoc google_news.md -o google_news.PDF
+```
 
 la conversion se fait, mais :
 
@@ -174,6 +212,13 @@ Observer les différences.
 Créer un dossier à la racine du coffre nommé csl
 dans ce dossier, télécharger la feuille de style suivante ieee (la télécharger [depuis le site Zotero](https://www.zotero.org/styles/ieee?source=1) en format .csl, envoyer ce fichier csl dans le dossier csl.
 
+```
 pandoc google_news.md --from html --to pdf --bibliography=URFIST_obsidian.bib --csl=csl\ieee.csl --pdf-engine=xelatex --citeproc -f markdown+smart -o google_news.pdf
+```
+La conversion devrait cette fois prendre en compte la citation et la référence bibliographique.
 
-La conversion devrait cette fois prendre en compte la citation et la référence bibliographique
+## convertir avec pandoc en utilisant bracket-eraser
+
+bracket-eraser est un petit script qui vous permet deux choses :
+- vous débarrasser des liens sous la forme [[liens]] (=wikiliens) qui restent dans le document en pdf après conversion avec Pandoc dans les exemples précédents
+- utiliser pandoc de façon guidée avec une interface graphique très basique (menus). Pour ajouter de nouvelles fonctionnalités, il faudra modifier le script. 
