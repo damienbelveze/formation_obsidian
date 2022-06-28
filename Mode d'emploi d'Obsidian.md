@@ -1,43 +1,41 @@
 ---
-title: Pourquoi et comment utiliser Obsidian pour ma thèse ?
-subtitle: "Projet de formation doctorale"
+title: Comment utiliser Obsidian
+subtitle: formation doctorale
 author: Damien Belvèze
 date: 04/06/2021
 link_citations: true
-bibliography: biblio/mylibrary.bib
-biblio_style: csl/ieee.csl
+graphics: true
 toc: true
 toc-title: table des matières
-tags: [prise de notes, méthode de travail]
+tags: [prise_notes, méthode_travail]
 aliases: [Obsidian, obsidian]
 ---
 
-<!doctype html> 
 
 # 1. Pourquoi utiliser Obsidian pour prendre des notes ?
 
 ![[tweet_schaller.png|{width=50%}]]
 
-## 1.1 avantages
+## 1.1 intérêts de la prise de note pour le travail intellectuel
 
-- hébergement en local (pas nécessaire de souscrire à un compte contrairement à Notion ou à Roam, ce dernier étant en plus payant). Tous vos fichiers - plugins, css, images, sons, fichiers en markdown ou en PDF-  sont dans un coffre (*Vault*, dans le langage d'Obsidian) que vous hébergez sur votre ordinateur et que vous pouvez synchroniser avec un serveur distant (Github par exemple). Dans ce tutoriel nous traduirons sytématiquement "Vault" par "coffre".
+une application de prise de notes doit être jugée selon la manière dont elle remplit les fonctions propres à la prise de notes et qui sont comme le rappelle Baldur Bjarnasson la créativité, la connaissance et la compréhension (*creativity*, *knowledge*, *understanding*)[[@bjarnasonDifferentKindsNotes20220621]] : 
 
-- format ouvert des notes ([[markdown]] = format universel, contrairement à  Evernote)
-- les notes sont hébergées sur notre ordinateur : on en a la maîtrise.
-- Pas dépendant d'un éditeur (contrairement à Org-roam pour emacs). On peut éditer depuis Obsidian ou bien depuis n'importe quel éditeur qui supporte le markdown (emacs, atom, panwriter, etc.)
-- Nombreuses possibilités de recherche dans les notes (par fichier, par mot dans la note, par mot dans la section de la note, par tag...) (voir [[@CaseObsidiananswernotetaking2021]])
-- le graphe de notes augmente la capacité de faire de nouvelles relations entre des concepts
-- Importance des rétroliens (combien de notes citent une même note). Cela permet de faire des associations d'idées et des graphes
-- possibilité d'avoir dans un même endroit des notes et des fichiers divers (code, images, vidéos) et de pouvoir lier ces notes et ces fichiers entre eux.
-- le nombre de plugins avec lesquels on peut étendre les capacités d'obsidian est en croissance constante.
-
-## 1.2 limites 
-
-- logiciel propriétaire, mais une bonne partie du code est en opensource et surtout la communauté des utilisateurs développe un grand nombre de codes en open source. Toutefois, si on veut se tourner vers une alternative entièrement libre comparable à Obsidian, le logiciel [Cosma](https://cosma.graphlab.fr/) mis au point par Arthur Perret (actuellement disponible sur Mac et Windows et bientôt sur Linux) offre une alternative très convaincante. 
-- l'affichage des images **dans** l'application n'est pas encore au point. Si la conversion avec pandoc fonctionne sur la taille des images, à l'intérieur d'Obsidian la taille de celles-ci est difficilement modulable. 
+| fonction | fonction détaillée |
+|:---:|:---|
+| créativité | engendrer des idées structurées avec des outils heuristiques |
+| créativité | Préserver les idées |
+| créativité | explorer ces idées jusqu'à ce qu'elles soient prises dans un plan cohérent ou bien qu'elles aient permis de répondre à un problème |
+| connaissance | étendre la mémoire : données du client, notes de réunions, références bibliographiques |
+| connaissance | connecter ces données au projet en cours de telle sorte qu'elles soient facilement mobilisables |
+| compréhension | distinguer, recadrer et contextualiser de l'information et des idées pour qu'elles s'intègrent à votre pensée |
+| compréhension | inciter à la reformulation avec ses propres mots des idées prises ailleurs |
 
 
-## 1.3 intérêt cognitif
+Obsidian n'est pas vraiment un second cerveau (cette phrase marketing [n'a guère de sens appliquée à une application](https://www.obsidianroundup.org/ite-not-second-brain/)), mais il nous fournit un excellent environnement de travail pour favoriser ces trois fonctions (créativité, connaissance, compréhension).
+Le fait de prendre des notes quotidiennes et de les lier entre elles avec une application de prise de notes en général n'est pas une activité de nature à élever notre quotient intellectuel, c'est une pratique qui nous permet de produire de meilleurs écrits. La prise de notes appliquée à des problématiques quotidiennes (voyages, cuisine, bricolage), permet également d'augmenter la qualité des produits finis en rendant l'information plus disponible.
+Mais la prise de notes ne devrait pas constituer une fin en soi, c'est une pratique tournée vers un résultat publiable (ou montrable à autrui)[[@bjarnasonGettingBackNotetaking2022]].
+
+### mémorisation, appropriation
 
 Le monde du web est celui de la réplication et du copier-coller. Pour autant copier-coller un texte lu est une facilité qui nous empêche de nous approprier son contenu. 
 
@@ -48,6 +46,49 @@ Le passage par l'écriture facilite non seulement l'apprentissage mais aussi la 
 Il est donc important de restreindre les citations aux passage où l'auteur résume sa pensée de manière particulièrement marquante. 
 
 En reliant entre elles ces notes prises au fil de l'eau à la faveur de lectures, Obsidian permet de structurer sa pensée et peut éventuellement amener à des rapprochements inédits entre des concepts qui sont en relation au départ avec des contextes différents (valeur heuristique de ces graphes de notes) 
+
+### productivité
+
+Obsidian est un outil qui favorise le *jardinage* des notes[[@CollignonIntegratinghypothesishighlights2021]]. En écrivant une note, on se rend compte qu'on peut faire un lien depuis cette note vers une note plus ancienne. Lorsque le lien est fait, on s'aperçoit qu'on peut ajouter un autre aspect à la note plus ancienne avec le savoir supplémentaire obtenu au moment de l'écriture de la première note. Cette activité aide non seulement à mémoriser, mais à créer de nouveaux liens, à appuyer les connaissances nouvelles sur un socle de connaissances anciennes et à enrichir ces connaissances plus anciennes de nouveaux aperçus. 
+
+Obsidian devient rapidement un outil personnel incontournable et nous développons au fur er à mesure que notre usage se déploit de nouvelles compétences pour le maintenir et le rendre encore plus productif
+
+![](images/khafagy.png)
+
+Certains utilisent Obsidian pour se lancer dans l'apprentissage du code par essai et erreur (puisqu'une note peut embarquer du code)[[@KhafagyTwitterPublish2022]]
+
+
+## 1.2 points forts de l'outil
+
+Obsidian présente les avantages de la nouvelle génération d'outils de PKM (personal knowledge management / Gestion personnelle des connaissances)
+
+- des notes liées les unes aux autres par des liens **et des rétroliens** (backlinks)
+- des fichiers de notes pouvant contenir d'autres fichiers (par exemple des PDF ou des scripts) selon le principe de la [transclusion](https://forum.obsidian.md/t/transclusion-embedding-for-searches/3348/2)  
+- une structure par défaut horizontale (les notes n'ont pas besoin d'être rangées dans des fichiers séparés cf. [[Zettelkasten]]). C'est possible de le faire si on le souhaite dans Obsidian, cela dit.   
+- des graphes de notes (cela plaît toujours, même si l'utilité réelle de ces graphes est un sujet débattu depuis que ces outils existent, voir [[Mode d'emploi d'Obsidian#Vue graphique globale|la partie consacrée aux graphes]])  
+- des modèles de note peuvent être produits par l'utilisateur et partagés avec d'autres. 
+- hébergement en local (pas nécessaire de souscrire à un compte contrairement à Notion ou à Roam, ce dernier étant en plus payant). Tous vos fichiers - plugins, css, images, sons, fichiers en markdown ou en PDF-  sont dans un coffre (*Vault*, dans le langage d'Obsidian) que vous hébergez sur votre ordinateur et que vous pouvez synchroniser avec un serveur distant (Github par exemple). Dans ce tutoriel nous traduirons sytématiquement "Vault" par "coffre".  
+- format ouvert des notes ([[markdown]] = format universel, contrairement à  Evernote)  
+- les notes sont hébergées sur notre ordinateur : on en a la maîtrise.
+- Pas dépendant d'un éditeur (contrairement à Org-roam pour emacs). On peut éditer depuis Obsidian ou bien depuis n'importe quel éditeur qui supporte le markdown (emacs, atom, panwriter, etc.)  
+- version disponible sur les différentes familles de systèmes d'exploitation (GNU/Linux, Windows, Mac)  
+- Nombreuses possibilités de recherche dans les notes (par fichier, par mot dans la note, par mot dans la section de la note, par tag..) (voir [[@CaseObsidiananswernotetaking2021]])  
+- Importance des rétroliens (combien de notes citent une même note). Cela permet de faire des associations d'idées et des graphes  
+- possibilité d'avoir dans un même endroit des notes et des fichiers divers (code, images, vidéos) et de pouvoir lier ces notes et ces fichiers entre eux.  
+- le nombre de plugins avec lesquels on peut étendre les capacités d'obsidian est en croissance constante.  
+
+## 1.3 limites 
+
+- Obsidian est un logiciel propriétaire, même si la communauté des utilisateurs développe un grand nombre de plugins dont le code est en open source. Si Obsidian décide demain de changer les modes d'accès à son logiciel (par exemple en en faisant un service accessible sur abonnement comme pour Roam, les utilisateurs devront trouver un autre outil libre dont le fonctionnement sera compatible avec le format de leurs notes. Si on veut se tourner vers une alternative entièrement libre comparable à Obsidian, on peut se tourner vers un logiciel de prise de notes comme Zettlr et pour obtenir un graphe de ses notes prises sur Zettlr, utiliser le logiciel [Cosma](https://cosma.graphlab.fr/) mis au point par Arthur Perret (actuellement disponible sur Mac et Windows et bientôt sur Linux).   
+
+- Obsidian ne donne pas d'identifiant unique et pérenne à chaque note et ne lie pas ces notes entre elles au moyen de ces identifiants. Selon Arthur Perret, les identifiants uniques et pérennes sont un gage de durabilité. Pour lui, les notes doivent distinguer l'id (identifiant unique), le titre de la note et le nom du fichier. Ce n'est pas le cas avec Obsidian. La méthode Zettelkasten, par ailleurs, utilise par définition ces identifiants uniques et pérennes. Si on se sert de préfixeur Zettelkasten comme identifiant unique, les liens entre fiches ne se baseront pas sur cet identifiant. Plusieurs experts considèrent que c'est une fragilité dans la mesure où les titres et les noms de fichiers peuvent changer, pas les identifiants pérennes. Une solution qui ne comporte pas d'identifiant pérenne par note ne peut pas assurer l'utilisateur que celui-ci pourra réutiliser son système de notes dans la durée, ou bien appliquer une autre solution à son système de notes[[@perretLiensWikiIdentifiants2022]]. 
+
+
+- l'affichage des images **dans** l'application n'est pas encore au point. Si la conversion avec pandoc fonctionne sur la taille des images, à l'intérieur d'Obsidian la taille de celles-ci est difficilement modulable.
+ 
+- Obsidian ne dispose pas de répétiteur (spaced repetition), c'est à dire qu'on ne peut pas programmer à l'avance l'apparition de notes à mémoriser (une fontion aléatoire d'affichage de notes existe pourtant sous la forme d'un plugin coeur). Pour l'apprentissage et la répétition, Obsidian peut cependant être connecté à Anki au moyen d'un plugin communautaire.   
+
+
 
 ## 1.4 Obsidian sur son smartphone
 
@@ -60,6 +101,19 @@ Afin de synchroniser ses fichiers avec ceux que contient son ordinateur,
 4. synchronisez
 5. ouvrez l'app obsidian et choisissez le dossier synchronisé comme coffre. 
 
+## 1.5 une interface agréable
+
+Obsidian offre une interface agréable à l'utilisateur. On peut comme dans Emacs ouvrir plusieurs buffers (fenêtres en même temps) et les organiser. 
+Certaines curiosités existent pourtant qui peuvent être déroutantes pour un débutant. Par exemple pour zoomer et dézoomer sur une note (sur Windows, Ctrl+ permet de zoomer, c'est classique, **Ctrl 0 permet de revenir à la taille par défaut**)
+
+## Les fichiers se trouvent par défaut sur sa machine
+
+Sous Windows, les fichiers de l'application se trouvent sous AppData
+(pour accéder à Appdata, afficher les fichiers masqués depuis l'explorateur Windows)
+
+Chaque coffre-fort peut-être hébergé à part. Les coffres se trouvent au même en droit que les plugins (là où on décide de les mettre : cela peut être le disque principal de l'utilisateur, une clé USB ou bien un serveur distant)
+
+Toutes les notes qu'on écrit se trouvent à l'endroit que l'on détermine et on garde la pleine maîtrise de ces notes.
 
 # 2. La méthode de prise de notes Zettelkasten
 
@@ -68,7 +122,30 @@ Voir  [[zettelkasten (méthode)]]
 
 # 3. Rédiger ses notes en [[markdown]]
 
-## 3.2 niveaux de titre
+## 3.1 Qu'est-ce que Markdown ?
+
+### une syntaxe très représentée dans l'écriture web
+
+Markdown (avec une majuscule) est une syntaxe mise au point par John Gruber en 2004 et qui devait simplifier l'écriture web. Les développeurs l'utilisaient (et l'utilisent toujours) pour rédiger plus simplement du HTML en ayant recours à une syntaxe simplifiée par rapport au balisage du HTML. 
+L'usage du Markdown a fini par se répandre au delà du cercle des développeurs web, et des auteurs, notamment académiques, s'en sont emparés pour écrire des textes convertibles non seulement en HTML mais également dans d'autres formats comme LaTeX ou PDF. 
+Markdown permet d'utiliser des éditeurs de texte simple compatibles avec un nombre grandissant d'applications (Obsidian en fait partie). L'écriture en texte simple (plain text) a pour intérêt de pouvoir mêler du texte et du code et de se passer de formats propriétaires (par exemple word). 
+
+### différentes saveurs de Markdown
+
+John Gruber a fait en sorte de ne pas limiter l'usage de sa syntaxe, ce qui fait que beaucoup d'éditeurs se la sont appropriée pour monter leur propre éditeur Markdown. C'est pour cela que d'un outil à l'autre, on peut être confronté à des saveurs (flavors) différentes de Markdown. Par exemple, un lien ne se formate par exactement de la même manière sur Slackmarkdown et sur Atom. 
+
+Le principe de Gruber était d'inciter l'utilisateur à avoir recours directement au HTML chaque fois que rien n'était prévu dans Markdown pour éditer tel ou tel élément du texte (par exemple les notes de bas de page ou les tableaux): 
+
+>For any markup that is not covered by Markdown’s syntax, you simply use HTML itself. There’s no need to preface it or delimit it to indicate that you’re switching from Markdown to HTML; you just use the tags.
+
+([John Gruber](https://daringfireball.net/projects/markdown/syntax#html))
+
+Pourtant, comme le rappelle Knut Malvaer, les éditeurs ont eu tendance à adapter Markdown et à augmenter ses capacités pour satisfaire leurs usagers parmi lesquels la proportion des auteurs non développeurs n'a cessé de croître, ce qui fait que la syntaxe Markdown n'est plus entièrement unifiée d'un éditeur à l'autre[[@MelvaerThoughtsMarkdown2022]]. 
+[Commonmark](https://commonmark.org/) a été créé pour fixer une syntaxe en markdown minimale, transposable d'un outil à l'autre, ce qui aide dans une certaine mesure les développeurs à gérer cette hétérogénéité dans le formatage en markdown (car le markdown est devenu depuis 2004 la *lingua franca* de l'écriture web). Cela n'empêche toujours pas un éditeur d'ajouter les fonctionnalités qu'il souhaite à cette base que constitue Commonmark. Ainsi Rmarkdown continue d'avoir une syntaxe markdown un peu différente de github sur des fonctions spécifiques même si à la base ces deux services utilisent Commonmark.
+
+## 3.2 niveaux de titre, listes à puces
+
+### niveaux de titre
 
 Le titre de la note est distinct du nom du fichier. Le nom du fichier est la première chose qui est créée de la note. 
 Dans une note, entourer un mot avec un double crochet (\[\[mot\]\]) crée automatiquement une note comportant mot.md dans le coffre. 
@@ -83,7 +160,29 @@ Si on configure un titre dans le pavé Yaml, celui-ci apparaîtra comme titre du
 | \#\#\# titre 3 | titre de niveau 3 | \<h3\> |
 | \#\#\#\# titre 4 | titre de niveau 4 | \<h4\> |
 
-## 3.3 tableaux et indentation
+### liste à puces
+
+le tiret ( - ) en début de phrase permet de faire une liste à puces : 
+
+\- pommes  
+\- poires  
+\- bananes  
+
+permet d'éditer
+
+- pommes  
+- poires  
+- bananes  
+
+Attention : la conversion de la note en markdown vers un autre format (ODT ou PDF notamment) peut mettre à mal les listes à puces si chaque élément qui les constitue n'est pas suivi de deux espaces en fin de ligne. 
+
+Pour éviter d'obtenir :
+
+\- pommes \- poires \- bananes
+
+dans le texte convertir en open document ou en PDF, ajouter systématiquement deux espaces dans le texte en markdown après pommes, poires et bananes.
+
+## 3.3 tableaux, indentation, épigraphes
 
 
 ### éditer un tableau
@@ -124,6 +223,8 @@ Le *pipe* (\|) qui sert à faire des tableaux peut aussi permettre de prendre en
 |                         (Adonis, *Ismaël*)
 
 
+
+
 ## 3.3 caractères
 
 | MD | niveau de titre | HTML |
@@ -132,6 +233,7 @@ Le *pipe* (\|) qui sert à faire des tableaux peut aussi permettre de prendre en
 | \*\*| **gras** | \<b\> |
 | \~\~ | ~~barré~~ | \<s\> |
 | \` | `code` | \<code\> |
+| \=\= | ==surlignage== | \<mark> |
 
 Pour "échapper" un caractère qui fait partie de la syntaxe du markdown (\*,\#, \~ par exemple), il faut faire précéder le caractère en question d'un antislash (\\) 
 
@@ -158,7 +260,18 @@ Si on veut lier sur un bloc plutôt qu'un header, remplacer le \# par un \^
 \[\^\1\] permet de créer une note de bas de page portant le numéro 1. Exemple: 
 première note de bas de page[^1]
 
-[^1]: cette note de bas de page peut être placée n'importe où, elle apparaîtra forcément à la fin du document.
+[^1]: cette note de bas de page peut être placée n'importe où, elle apparaîtra forcément à la fin du document. Attention : dans la note de bas de page, ne pas utiliser les deux points (:) après les crochets.
+
+### transclusion
+
+Avec Obsidian, on la possibilité de faire un lien vers un document de la base de notes (une image, un PDF) de telle sorte qu'en mode lecture, si on passe la souris sur le lien, une prévisualisation du document s'affiche (pour y accéder, il suffit de cliquer) ou bien on peut aussi inclure le document dans la note, de telle sorte que celui-ci soit visible et déroulable. 
+On peut le faire notamment pour un PDF : 
+
+!\[\[document.pdf\]\]
+
+pour afficher une version ancienne de ce guides en PDF à l'intérieur de la présente note : 
+
+\!\[\[mode_emploi_obsidian.pdf\]\]
 
 
 ### liens externes
@@ -177,19 +290,53 @@ ou
 
 possibilité, comme pour un PDF de faire un glisser déposer du document dans la note. 
 
-\#tag 
-Le dièse sans espace après = tag
-Possibilité de faire une recherche sur les tags uniquement.
-Possibilité d'afficher le volet des tags à droite (plugin principal *tag pane* : mettre en on et choisir un raccourci clavier. Les tags y apparaissent par défaut rangés par ordre de fréquence d'apparition dans les notes)
-On peut aussi définir ces tags dans le pavé YAML (voir plus bas), ce qui a l'avantage de ne pas les laisser apparaître dans le document quand celui-ci est exporté dans un format de publication (wiki, html, pdf, etc. )
+### les tags
+
+Avec les rétroliens, les marqueurs sont une grande richesse de ces outils de gestion de notes. 
+Comme ailleurs, le tag peut apparaître dans le texte précédé (sans espace) d'un dièze ou hashtag (\#) ou bien dans l'entête YAML après (ce qui a l'avantage de ne pas les laisser apparaître dans le document quand celui-ci est exporté dans un format de publication comme wiki, html, pdf, etc. ) : 
+
+````yaml
+tags: [tag1, tag2, tag3/tag4]
+````
+
+ici le tag4 est un tag fils de tag3. On peut donc prévoir dans Obsidian, une arborescence de tags.
+
+Attention si on laisse un espace entre le dièze et le mot-clé qui constitue le tag, Obsidian va l'interpréter comme un titre 1 selon la syntaxe Markdown.
+
+Il ne peut y avoir d'espaces dans les tags : 
+
+````yaml
+tags: [sciences politiques]
+````
+va générer deux tags : \#sciences et \#politiques
+il faut veiller à prévoir des liaisons entre les mots constitutifs d'un tag, par exemple l'underscore : 
+
+````yaml
+tags: [sciences_politiques]
+````
+
+On peut mener une recherche sur les tags uniquement.
+Dans les plugins standards, il est intéressant d'autoriser l'apparition du volet des tags (tag pane) à droite. Les tags y apparaissent par défaut rangés par ordre de fréquence d'apparition dans les notes)
+
+Si on charge et active le plugin communautaire [Tag Wrangler](https://github.com/pjeby/tag-wrangler) et que le plugin standard "volet des tags" est également activé, il est possible de renommer des tags : toutes les notes où ce tag apparaît arboreront le tag avec son nouveau nom. 
+Ce plugin permet aussi d'affiner la recheche en incluant ou excluant certains tags. 
 
 ## 3.5  autres langages (html, LaTeX)
 
-Le markdown est une syntaxe très simple à apprendre et très versatile. Toutefois, ce n'est pas une syntaxe universelle. Pour éditer certains contenus, vous aurez besoin de faire appel à d'autres langages à l'intérieur de votre texte en markdown, notamment le Html ou le LaTeX (si vous avez téléchargé un éditeur LaTeX vous pourrez constater que le LaTeX et le Markdown font plutôt bon ménage dans Obsidian)
+Le markdown est une syntaxe très simple à apprendre et très versatile. Toutefois, il n'a pas été conçu comme une syntaxe universelle permettant d'éditer intégralement un ouvrage ou un diaporama. Comme l'indiquait John Gruber (voir plus haut [[Mode d'emploi d'Obsidian#différentes saveurs de Markdown]] pour obtenir la présentation souhaitée pour certains contenus, on aura besoin parfois de faire appel à d'autres langages dans son document, notamment le HTML ou LaTeX (si vous avez téléchargé un éditeur LaTeX vous pourrez constater que le LaTeX et le Markdown font plutôt bon ménage dans Obsidian)
 
 ### utilisation du LaTeX
+Obsidian n'est pas un éditeur en LaTeX et ne se substitue pas à ce genre d'éditeur. 
+Toutefois, il est possible de rédiger des formules mathématiques et chimiques directement dans Obsidian, comme on le ferait dans un document en LaTeX, grâce à la bibliothèque Mathjax qui a été intégrée aux dernières versions d'Obsidian. 
 
-On peut encapsuler du LaTeX entre deux **\$**
+#### formules mathématiques
+
+Le package mathjax a été chargé dans le code d'Obsidian [en septembre 2021](https://forum.obsidian.md/t/support-for-additional-latex-packages/878/7). Ce package permet d'utiliser les fonctionnalités de la bibliothèque mathjax sur un document en markdown. Parmi ces fonctionnalités, on trouve également la [syntaxe de base du mhchem](https://mhchem.github.io/MathJax-mhchem/) pour les formules chimiques.  
+Une version étendue de mathjax est disponible [sous la forme d'un plugin](https://github.com/xldenis/obsidian-latex)
+
+Grâce à cela on peut encapsuler des équations lisibles en LaTeX en les encadrant par le signe **\$**
+
+$\pi$ s'écrit ainsi \$\pi\$
 
 \$67\\sqrt{\\prod_{67}^{4}}\\Rightarrow \\mathrm{C}_{56}^{'}\$
 
@@ -197,7 +344,27 @@ donne :
 
 $67\sqrt{\prod_{67}^{4}}\Rightarrow \mathrm{C}_{56}^{'}$
 
-Cette formule ne correspond à rien, elle a été créée à partir d'un [éditeur de formules en LaTeX](https://latexeditor.lagrida.com/) disponible en ligne
+Cette formule ne correspond à rien, elle a été créée à partir d'un [éditeur de formules en LaTeX](https://latexeditor.lagrida.com/) disponible en ligne. 
+
+Pour centrer l'équation (au lieu de l'insérer dans le texte, redoubler le $)
+
+\$\$67\\sqrt{\\prod_{67}^{4}}\\Rightarrow \\mathrm{C}_{56}^{'}\$\$
+
+donne : 
+
+$$67\sqrt{\prod_{67}^{4}}\Rightarrow \mathrm{C}_{56}^{'}$$
+
+Par rapport à la taille de défaut, les caractères présents dans ces formules issues de MathJax ont une taille augmentée. Cela a été réglé en ajoutant une instruction concernant tous les caractères édités avec MathJax dans le CSS de base ( pour les questions relatives au CSS, [[Mode d'emploi d'Obsidian#9 changer le CSS|voir plus bas]])
+Voici ce qui a été ajouté en l'occurrence :
+
+``````css
+.MJX-TEX {
+   font-size: 180%;
+}
+
+``````
+
+[source](https://www.reddit.com/r/ObsidianMD/comments/l4qdga/comprehensive_overview_latex_mathjax_equation_in/?utm_source=share&utm_medium=web2x&context=3)
 
 Utiliser LaTeX pour réaliser les exposants : 
 
@@ -209,11 +376,54 @@ donne :
 - le mebioctet ou Mi parfois écrit Mio correspond à $2^{20}$ octets 
 - le gibioctets ou Gi parfois écrit Gio correspond à   $2^{30}$ octets
 
+#### formules chimiques
+
+La formule de l'eau peut-être notée de la manière suivante : \$\ce\{H2O}\$ cela donne $\ce{H2O}$
+
+Etat d'oxidation :  \$\ce{Fe^{II}Fe^{III}2O4}\$ donne : $\ce{Fe^{II}Fe^{III}2O4}$
+
+([source](https://mhchem.github.io/MathJax-mhchem/))
+
+#### Mise en page
+
+Le markdown ne donne pas vraiment de solution lorsqu'on veut mettre deux images en regard (on ne peut pas encapsuler ces images dans un tableau). On est obligé pour réaliser cela de recourir au package graphicx de LaTeX. 
+
+\begin{figure}
+\begin{minipage}[t]{.4\linewidth}
+    \begin{center}
+       \includegraphics[width=6cm]{drake1.png}
+       \caption{pyramide ideale}
+    \end{center}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.4\linewidth}
+    \begin{center}
+       \includegraphics[width=6cm]{drake2.png}
+       \caption{pyramide effective}
+    \end{center}
+\end{minipage}
+\end{figure}
+
 
 ### utilisation du HTML
 
 Lorsqu'on copie-colle du html dans Obsdian, généralement ce html est copié avec des balises supplémentaires (\`\`). 
 Pour copier-coller du HTML qui fonctionne correctement, préférer Ctrl+shift+V à Ctrl+V
+
+### faire un épigraphe
+
+Cela fonctionne en vue d'une conversion avec [[Mode d'emploi d'Obsidian#10 2 Directement avec Pandoc|pandoc]]
+
+### créer un épigraphe
+
+``````html
+<div class='epigraph'>
+
+*"All human things are subject to decay, and when fate summons, Monarchs
+must obey."* --- John Dryden.
+
+</div>
+``````
 
 #### pour faire des tableaux avec des colonnes ou des lignes fusionnées
 
@@ -309,7 +519,7 @@ donne :
 
 <font color="#cc241d"> Texte en couleur</font>
 
-faire un saut de page nécessité l'inclusion de html
+faire un [[saut de page]] nécessité l'inclusion de html
 
 ``
 <div style="page-break-after: always visibility: hidden">
@@ -322,6 +532,8 @@ Le contenu qui suit se trouvera sur la page suivante.
 <div style="page-break-after: always visibility: hidden">
 \pagebreak
 </div>
+
+#### dimensionner des images
 
 L’image peut prendre trop d’espace sur la page. Dans ce cas, il convient de déterminer sa dimension pour qu’elle s’insère sans problème sur la page. Cela se fait au moyen des attributs HTML width ou heigth exprimés en valeur absolue (nombre de pixels ou relatives (pourcentage par rapport à la largeur ou à la hauteur de l'image initiale). 
 
@@ -354,6 +566,50 @@ Quant à l’alignement du texte, cela peut se traiter avec des lignes de HTML i
 <img style="float: right;" src="images.buvs.jpg">
 </span>
 
+#### commenter un document
+
+Supposons que l'on souhaite laisser des commentaires pour orienter le sens de l'édition d'une note, sans que ce commentaire apparaisse dans la version finale. Bien qu'Obsidian ne soit pas d'abord un éditeur de texte, on peut utiliser la fonction *comment block code* présente dans les principaux éditeurs de texte pour commenter du code mais aussi du texte en markdown
+
+voici le texte à commenter \<\!\-\- commentaire de ce texte \-\-\>
+
+### inclure des graphiques dans les notes
+
+la bibliothèque en javascript mermaid.js permet d'inclure des graphiques (camemberts, diagrammes, flow charts, etc) dans une note. 
+Il existe de nombreux tutos consacrés à cet outil qu'il n'est pas nécessaire d'installer dans Obsidian. Voir ce [guide](https://www.mishacreatrix.com/knowledge-management-flow-diagram-in-obsidian) entre autres. Pour s'essayer à la construction de ces graphiques, on peut utiliser [le site https://mermaid.live](https://mermaid.live)
+
+exemple : [worklfow éditorial réalisé par UjuBib](https://twitter.com/UjuBib/status/1480519081820397572) : 
+![code](images/mermaid2.png)
+![graphe](images/mermaid1.png)
+
+## 3.6 importer des notes écrites dans un autre format que Markdown
+
+Supposons que j'aie déjà accumulé avant de connaître Obsidian des notes en texte simple (format TXT) ou en format Word (traitement de texte LibreOffice ou Word), comment faire pour les convertir en masse depuis le répertoire où elles se trouvent. Les notes à importer dans Obsidian doivent être en markdown. Comment réaliser cette conversion de mes notes en TXT vers ce format markdown ?
+
+Il existe plusieurs manières de convertir  un ensemble de documents documents d'un format à l'autre. On peut utiliser un terminal de commandes (bash) pour ce faire. Par exemple sous Linux, si on ouvre un terminal dans le répertoire où se trouvent les notes à convertir, on entrera la commande suivante : 
+
+Sur Windows, on peut utiliser le terminal de commande Powershell pour réaliser cette conversion directement en bash, ou bien en combinant cette commande avec le convertisseur [Pandoc](https://pandoc.org/installing.html. La seconde option est détaillée ci-dessous:
+
+````bash
+for /r %i in (*.txt) do multimarkdown -b %i
+````
+
+Pour MacOs, on peut se contenter de [changer les extensions des fichiers](https://osxdaily.com/2016/11/08/batch-change-file-extensions-mac/)
+
+Il est toujours pratique d'avoir installé sur sa machine lorsqu'on utilise des documents en markdown qui peuvent être convertis dans une multitude de formats différents. Nous supposons que Pandoc est installé. Ouvrir un terminal Powershell dans le répertoire où se trouvent les notes et entrer la commande suivante : 
+
+````powershell
+Get-ChildItem . -Filter *.txt |
+ Foreach-Object {
+     pandoc $_ -o $_.Name.Replace('.txt', '.md')
+ }
+
+````
+Puis exporter toutes les notes en markdown dans le répertoire des notes sous Obsidian. 
+Les noms de fichiers deviendront les titres des notes (voir [cette vidéo](https://www.youtube.com/embed/lGe9Hm-3YUk) sur Youtube. 
+
+Reste à faire les liens entre les différentes notes ce qui est un travail bien plus long que la simple conversion que nous venons de faire. 
+
+
 
 # 4. Les plugins d'Obsidian
 
@@ -385,13 +641,33 @@ Seuls deux plugins correspondent à une option payante d'Obsidian : la publicati
 
 Voici une revue de quelques plugins installés par défaut :
 
+### explorateur de notes
+
+Par défaut, trois plugins sont activés sur Obsidian pour faciliter la recherche : 
+
+- l'explorateur de fichier (volet latéral gauche qui permet de naviguer dans une arborescence de fichiers)
+
+- le plugin rechercher permet dans le même volet de rechercher par catégorie : file(), tag(), path()...
+
+- le selecteur rapide : la commande Ctrl+O (commande par défaut) permet d'accéder directement à tous les fichiers en tapant un élément de leur nom dans un champ. 
+
 ### Explorateur de fichiers
 
 L'explorateur de fichiers permet de naviguer dans les fichiers de votre coffre à l'endroit où celui-ci est hébergé. 
 
-### Vue graphique
+### Vue graphique globale
 
-La vue graphique vous permet de visualiser l'ensemble de vos notes et des liens qui les unissent sous la forme d'un graphe. Lorsque les notes ne sont pas liés à quelques projets, cette constellation devient vite illisible. 
+La vue graphique vous permet de visualiser l'ensemble de vos notes et des liens qui les unissent sous la forme d'un graphe.
+
+D'après Arthur Perret[[@PerretWhatpointgraph2022]], le bénéfice de ces visualisations qui passent aux yeux de certains comme des gadgets dont on peut se passer n'est pourtant pas à négliger : 
+
+- le graphe nous rappelle que notre mode d'écriture et de mémorisation est par défaut réticulaire. Ce que nous écrivons de nouveau s'ancre toujours dans un savoir déjà acquis et des notes déjà prises. Faire des liens avec ce savoir pré-existant permet de solidifier ses connaissances
+- le graphe nous permet de prendre conscience de sujets émergents dans notre prise de notes et de liens qui pourraient être faits entre ces sujets et d'autres plus anciens. 
+- le graphe nous permet de trouver de l'information reliée à la note que nous sommes en train d'écrire et que nous ne cherchions pas ([[sérendipité]]). Créer des liens entre des notes voisines permet de sortir la note de son isolement, cela empêche la pensée en silo :
+
+> A graph is a memory aid that prevents siloed thinking.
+
+Lorsque les notes ne sont pas liés à quelques projets, cette constellation devient vite illisible. 
 
 ![vue graphique globale](images/graphe_obsidian.png)
 
@@ -410,10 +686,21 @@ gris clairs : notes avec texte
 gris foncées : notes sans texte (seul le titre existe, créé dans une autre note par du texte mis entre accolades). Ces notes restent à rédiger. 
 On peut assigner aux tags d'autres couleurs que la couleur marron qui est celle par défaut. 
 
-Pour cela se positionner dans la vue graphique, cliquer sur la roue crantée et sélectionner nouveau groupe. Pour visualiser toutes les références (notes commençant par un @), on peut par exemple fixer une couleur particulière au groupe **file:@**
+Pour cela se positionner dans la vue graphique, cliquer sur la roue crantée et sélectionner nouveau groupe. Pour visualiser toutes les références (notes commençant par un \@), on peut par exemple fixer une couleur particulière au groupe **file:\@**
 
 ![couleur des tags](images/couleur_tags.png)
 
+### prendre conscience de l'importance des notes au moyen de la vue graphique
+
+On l'a vu, Obsidian propose une mise à plat des notes, sans structure hiérarchique (pas de dossiers, ni de sous-dossiers) et cela pour mimer la façon dont notre cerveau traite l'information (le concept orange peut être lié à des objets de couleur orange, un crépuscule, une marque de téléphone, un feu de signalisation, mais également à des fruits puisque l'orange est un fruit. Il n'y a pas de lien de hiérarchie possible entre des choses très différentes comme un feu de circulation et une pomme par exemple). Toutefois, le graphe nous permet d'observer que certaines notes occupent une plus grande centralité que d'autres (et peuvent donc passer pour plus importantes que d'autres pour l'esprit qui a collationné ces notes). Il existe trois types de centralité : 
+
+la centralité de degré : la note qui a le plus de liens avec des notes qui ont elles-mêmes beaucoup de liens
+la centralité de proximité : la note à partir de laquelle les chemins sont les plus courts vers l'ensemble des notes du graphe
+la centralité d'intermédiarité : la note qui relie  entre elles le plus de pôles (ypiquement une note orange pourrait relier un pôle de notes fruits et un pôle de notes objets de couleur orange)
+
+![cerf-volant de Krackhardt ](images/graph_theory.png)
+
+### vue graphique locale
 
 Plus intéressante est la possibilité d'ouvrir un graphe local à partir de la note (aller dans les raccourcis clavier pour paramétrer la combinaison de touches qui vous conviendra pour faire apparaître ce graphe)
 
@@ -436,6 +723,12 @@ Activer ce plugin, vous permettre de constituer des templates (voir ci-dessous)
 Il est très simple grâce à ce plugin de constituer des diapositives et les présenter à la place d'un document impress ou powerpoint. 
 
 chaque diapositive est séparée de la précédente par trois tirets (\-\-\-)
+
+
+### Les plugins payants Sync et Publish
+
+Ces plugins sont payants parce qu'ils supposent un hébergement des données sur les serveurs d'Obsidian et une synchronisation avec entre ces serveurs et l'ordinateur qu'on utilise pour modifier les fichiers. 
+Leur recours peut-être intéressant pour constituer des tutoriels accessibles en ligne à partir de ses notes (voir par exemple ces [50 leçons et exercices pour apprendre le HTML, le Javascript et le CSS](https://publish.obsidian.md/yannhoury/Documentation/HTML-CSS/Cours+HTML+CSS+JS/Index))
 
 
 
@@ -490,6 +783,33 @@ exemple de pavé YAML
 **aliases:**\[alias1, alias2, alias3\]
 \-\-\-
 
+
+ajouter une affiliation en utilisant des packages de LaTeX : 
+
+\-\-\-
+**title:** Mode d'emploi d'obsidian 
+**subtitle:** Comment prendre efficacement des notes pour sa thèse
+**date:** 21/06/2021
+**author:** Damien Belvèze
+**affliliation:** Université de Rennes 1
+**toc:** true
+**toc-title:** table des matières
+**link-citations:** true
+**bibliography:** mabiblio.bib
+**biblio-style:** nature.csl
+**tags:**\[tag1, tag2, tag3\]
+**aliases:**\[alias1, alias2, alias3\]
+header-includes: |
+    \\usepackage{authblk}
+	\\author{John Doe \\thanks(john.doe@email.com) }
+	\\affil{University of Cambridge}
+\-\-\-
+
+[Source](https://youtu.be/nr5HA32GMFA)
+
+
+
+
 - les valeurs inscrites en tant que titre, sous-titre, nom de l'auteur et date, vont au moment de la conversion avec Pandoc constituer la page de titre
 
 - si toc (table of content) reçoit la valeur *true*, une table des matières sera générée. 
@@ -498,7 +818,7 @@ exemple de pavé YAML
 
 - les champs bibliography et biblio-style règlent les aspects bibliographiques. 
 
-* *bibliography*: spécifier le chemin absolu (C:/..../fichier.bib) ou relatif (references/fichier.bib) vers le document qui contient les références bibliographiques (un fichier .bib exporté de Zotero par exemple)
+* *bibliography*: spécifier le chemin absolu (C:/..../fichier.bib) ou relatif (references/fichier.bib) vers le document qui contient les références bibliographiques (un fichier .bib exporté de [[Zotero]] par exemple)
 
 * *biblio-style*: lien vers le fichier csl qui contient les règles de présentation de la bibliographie (par exemple [nature.csl](https://www.zotero.org/styles/nature?source=1))
 
@@ -525,8 +845,31 @@ A titre d'exemple, la fonction
 
 \<\% tp.file.creation_date("DD-MM-YYYY") \%\> 
 
-inscrit la date du jour dans la note. 
-C'est une commande très utile à insérer dans un template afin de permettre à toutes les notes créées à partir de ce template de contenir la date du jour. 
+inscrit la date du jour dans la note.  C'est une commande très utile à insérer dans un template afin de permettre à toutes les notes créées à partir de ce template de contenir la date du jour. 
+
+La fonction 
+
+\<\% tp.file.title \%\>
+
+Plus de fonctions [ici](https://silentvoid13.github.io/Templater/internal-functions/internal-modules/file-module.html#tpfiletitle)
+
+reprend le nom du fichier à l'endroite souhaité (par exemple devant l'attribut title dans le bloc YAML) comme dans l'exemple ci-dessous : 
+
+`````
+---
+title: <% tp.file.title %>
+subtitle:
+author: Damien Belvèze
+date: <% tp.file.creation_date("DD-MM-YYYY") %>
+link_citations: true
+bibliography: mylibrary.bib
+biblio_style: csl\ieee.csl
+aliases: []
+tags: []
+---
+``````
+
+
 
 # 6. Inscrire son quotidien dans Obsidian
 
@@ -589,7 +932,7 @@ Si la version de Pandoc dont on dispose n'inclue pas le plugin pandoc-citeproc, 
  
  5. Dans les options du plugin, indiquer le nom du répertoire ('références') qui contient le fichier .bib provenant de Zotero. Indiquer le chemin relatif vers le fichier bib : /espacedetravail/references/references.bib
      Si le chemin est le bon, le nombre d'enregistrements du fichier bib devrait apparaître. 
-	 Il faut également définir un dossier où iront les références bibliographiques issues de Zotero (notes précédées d'un @). Si on souhaite que celles-ci aillent à la racine du coffre, on supprimer le texte qui est par défaut. Si on souhaite les ranger dans un dossier particulier, créer ce dossier (par exemple sous .obsisian) et indiquer au plugin le chemin vers ce dossier.
+	 Il faut également définir un dossier où iront les références bibliographiques issues de Zotero (notes précédées d'un \@). Si on souhaite que celles-ci aillent à la racine du coffre, on supprimer le texte qui est par défaut. Si on souhaite les ranger dans un dossier particulier, créer ce dossier (par exemple sous .obsisian) et indiquer au plugin le chemin vers ce dossier.
 	 
 6. Dans les Paramètres d'Obsidian > raccourcis clavier, paramétrer un raccourci clavier pour insérer une citation en format markdown (Citations: insert markdown citation). Saisissons à cet endroit par exemple la combinaison de chiffres suivante : **Shift + Ctrl + M**
 
@@ -601,8 +944,43 @@ Si la version de Pandoc dont on dispose n'inclue pas le plugin pandoc-citeproc, 
 
 10. On obtient le PDF souhaité avec les références correctement représentées (appels de citation et bibliographie) selon le style choisi dans la commande pandoc. 
 
+# 8. importer des notes créées ailleurs dans Obsidian
 
-# 8. changer le CSS
+## MDnotes (plugin de Zotero)
+
+il est possible d'importer des notes créées dans Zotero avec le plugin MDnotes
+1. Charger le [plugin MDnotes](https://github.com/argenos/zotero-mdnotes) dans Zotero
+2. paramétrer le plugin
+
+![](images/mdnotes1.png)
+
+3. Indiquer un répertoire d'export dans Obsidian (par exemple un répertoire intitulé MDnotes)
+4. Dans ce répertoire, MDnotes cherchera les fichiers suivants : 
+
+.
+├── Mdnotes Default Template.md
+├── Standalone Note Template.md
+├── Zotero Metadata Template.md
+└── Zotero Note Template.md
+
+pour paramétrer l'affichage de la note de la façon souhaitée, pour une note fille, éditer le document MDnotes Default Template.md, si c'est une note parente Standalone Note Template.md
+
+Pour exporter une note, clic droit sur la référence > MDnotes > export to markdown
+
+Le fichier sera exporté en markdown à l'endroit spécifié dans le menu du plugin
+
+## hypothesis
+
+Si on utilise hypothes.is pour annoter le web (plugin actuellement accessible sur Chrome), il existe un plugin d'Obsidian qui permet de synchroniser ses notes sur hypothes.is avec un répertoire d'Obsidian. 
+
+1. Charger le plugin hypothesis (disponible dans les plugins communautaires)
+2. activer-le (ne pas oublier cette étape !)
+3. dans hypothesis, aller sur developer, générer un token
+4. dans le plugin d'Obsidian, spécifier le répertoire où doivent aller les notes et entrer le token
+
+Dès lors que le plugin est chargé, un bouton dans le menu latéral permet de synchroniser les notes prises dans Hypothes.is avec Obsidian
+
+# 9. changer le CSS
 
 une feuille de style CSS va définir pour un document en markdown comment va se présenter un titre 1 (# titre1), un titre 2 (## titre2), comment une image va être alignée par rapport au texte, comment les citations vont être présentées. 
 
@@ -611,7 +989,7 @@ Ce CSS peut être pris en compte lorsqu'on exporte la note d'obsidian vers un fi
 Si aucun chemin vers un fichier CSS n'est spécifié dans les métadonnées (YAML), Obsidian va appliquer la feuille de style CSS qui se trouve à la base du répertoire : 
 - dans les paramètres d'Obsidian (apparence), vérifier que l'option *appliquer un css personnalisé* est cochée
 - ouvrir un éditeur de texte (bloc-note, notepad++, etc.) et éditez le CSS dont vous avez besoin. 
--  enregistrer le fichier à la racine du répertoire sous le nom **obsidian.css**
+-  Sous le répertoire .obsidian, créer un dossier intitulé *snippets*. Enregistrer le fichier css dans ce dossier. Au besoin, recharger le css depuis le menu apparence et vérifier que l'utilisation du CSS ajouté est bien activée. Attention : les changements ne seront pas visibles en édition. Le CSS n'affecte que le mode lecture.  
 
 A titre d'exemple, le code...
 
@@ -625,12 +1003,12 @@ h3 { color: #689d6a; }
 Il n'est pas question ici de créer un guide d'apprentissage du CSS, mais on peut trouver [ici](https://forum.obsidian.md/t/meta-post-css-themes/76) des thèmes tout faits pour les notes et [là](https://github.com/Dmitriy-Shulha/obsidian-css-snippets/tree/master/Snippets) des *snippets*, autrement dit des bouts de code en CSS qui permettent d'obtenir un affichage personnalisé de certains éléments. Ces exemples peuvent être repris pour constituer une feuille de style CSS qui nous soit propre.
 
 
-# 9. Conversion de la note en PDF ou dans un autre format de sortie
+# 10. Conversion de la note en PDF ou dans un autre format de sortie
 
 On peut éditer une note en PDF en utilisant la fonctionnalité interne d'Obsidian (exporter en PDF). 
 En revanche, pour gérer certains aspects comme la bibliographie, on aura besoin d'utiliser Pandoc en lien avec LaTeX 
 
-## 9.1 pandoc
+## 10.1 pandoc
 
 Pandoc est le couteau-suisse de l'édition numérique. Il ne dispose pas à ce jour d'une interface graphique, mais les manuels d'utilisation ne manquent pas pour apprendre à taper les lignes de commande qui vous permettront d'obtenir le résultat souhaité.
 
@@ -667,9 +1045,12 @@ Attention : même si LaTeX est correctement chargé sur la machine, l'export en 
 Définir des raccourcis clavier pour les différents formats d'export
 Par exemple Ctrl+Alt+P pour un export en PDF, Ctrl+Alt+W pour un export en .doc, etc.
 
-## 9.2 Directement avec Pandoc
+## 10.2 Directement avec Pandoc
 
 Ouvrir dans le dossier où se trouve la note le menu contextuel qui permet d'accéder à Powershell (sous Windows : sshift + clic-droit) ou ouvrir le terminal à cet endroit sous Linux. Pour Windows. 
+
+### script avec Powershell
+
 - Windows : ouvrir l'interface de commande powershell
 
 Il peut être nécessaire avant de convertir le document md en pdf de supprimer les liens internes en markdown (liens vers d'autres notes), sinon le PDF comportera des \[\[\]\] indésirables dans le texte final. 
@@ -681,9 +1062,9 @@ On peut utiliser powershell pour cela :
 Ajouter à cela la commande propre à pandoc. 
 Cela donne par exemple pour un fichier intitulé note.md
 
-``
+``````powershell
 (Get-content ./note.md -Raw).replace("[","").replace("]","") | Set-content ./note2.md | pandoc ./note2.md --bibliography C:\Users\dbelveze\Nextcloud\obsidiantest\biblio\mylibrary.bib --csl C:\Users\dbelveze\Nextcloud\obsidiantest\csl\nature.csl --pdf-engine=xelatex --citeproc -f markdown+smart -o note.pdf | Remove-Item ./note2.md
-``
+``````
 
 ce programme: 
 
@@ -705,7 +1086,30 @@ pandoc 'document.md' --from html --to pdf --pdf-engine=xelatex --citeproc -f mar
 
 (prévoir un titre 1 bibliographie à la fin du document)
 
-## 9.3 utiliser une feuille de style
+### script avec Python
+
+possibilité de convertir des fichiers avec le package [[pypandoc]]
+
+``````python
+import os
+import pypandoc
+fichier = input("Quel fichier voulez-vous convertir ?")
+with open(fichier, 'r') as file :
+  filedata = file.read()
+
+# Replace the target string
+filedata = filedata.replace('[[', '').replace(']]','')
+
+# Write the file out again
+with open('file.txt', 'w') as file:
+  file.write(filedata)
+# convert modified file into open document file
+pypandoc.convert_file('file.txt', format='md', to='pdf', outputfile='new_file.pdf')
+# delete file text
+os.remove('file.txt')
+``````
+
+## 10.3 utiliser une feuille de style
 
 On l'a vu, Markdown évacue complètement la question des styles (police, taille des caractères, couleur des caractères) pour ne s'occuper que de la structure du document. C'est la raison pour laquelle, beaucoup de personnes trouvent qu'il est plus simple d'écrire dans cette syntaxe. Toutefois, lorsqu'on travaille en vue de rendre un rapport ou bien lorsqu'on produit des documents formatés d'une certaine manière pour une entreprise, la production doit au final avoir une certaine forme, respecter une certaine feuille de style. 
 Avec pandoc, il est aisé de créer un modèle adapté à ses besoins. 
@@ -731,7 +1135,9 @@ Faire de même avec un template en format open document :
 plus d'info sur [l'aide en ligne de pandoc](https://pandoc.org/MANUAL.html#option--reference-doc)
 
 
-# 10. Faire un backup de ses notes sur Github
+# 11. Faire un backup de ses notes sur Github
+
+## 11.1  d'Obsidian à Github ou Gitlab
 
 1. installer Git sur sa machine
 2. Se créer un compte sur github
@@ -752,10 +1158,14 @@ plus d'info sur [l'aide en ligne de pandoc](https://pandoc.org/MANUAL.html#optio
 
 [Source](https://github.com/gitobsidiantutorial/obsidian-git-tut-windows/blob/main/README.md)
 
-</body>
+On peut bien sûr envoyer le contenu de sa bibliothèque de notes et des documents qui l'accompagnent en utilisant Git directement depuis le dossier racine. Ce plugin facilite juste ce processus (un raccourci-clavier par rapport à l'envoi de quelques commandes dans le terminal de Git)
 
+## 11.2 de github ou gitlab à la publication de ses notes en ligne
 
-# Où trouve t-on de l'aide le plus souvent à propos d'Obsidian
+En théorie, il est possible de créer un site statique à partir de Github en utilisant netlify ou Jekyll comme gestionnaire de sites statique. Toutes les notes en markdown envoyées depuis Obsidian vers Github vont être disponibles depuis ce site et liées les unes aux autres par des liens hypertexte. 
+Après plusieurs tentatives avec Netlify, et en suivant plusieurs tutos dont [celui-ci](https://www.starfallprojects.co.uk/posts/obsidian-monorepo/), je ne suis pas encore parvenu à réaliser cette opération. A priori, elle rend inutile le fait d'obtenir ce service en publiant à ses frais ses notes sur les serveurs d'Obsidian (plugin publish d'obsidian)
+
+# 12. Où trouve t-on de l'aide le plus souvent à propos d'Obsidian
 
 Quand on travaille avec Obisidian, assez fréquemment on est amené à chercher de l'information sur la syntaxe markdown, LaTeX ou Pandoc. Mais en ce qui concerne Obsidian lui-même, les deux sources d'information qui reviennent le plus souvent (hormis les tutos très nombreux et très utiles sur Youtube) sont : 
 
@@ -763,21 +1173,4 @@ Quand on travaille avec Obisidian, assez fréquemment on est amené à chercher 
 - le [canal consacré à Obsidian sur Reddit](https://www.reddit.com/r/ObsidianMD/)
 
 # Bibliographie
-
-1.
-
-Tomaszczyk J, Matysek A. Digital Wisdom in Research Work. 2020 [cited 2021 Sep 29]; Available from: [https://rebus.us.edu.pl/handle/20.500.12128/18510](https://rebus.us.edu.pl/handle/20.500.12128/18510)
-
-2.
-
-Clear DB. Zettelkasten — How One German Scholar Was So Freakishly Productive [Internet]. The writing cooperative. 2021 [cited 2021 Sep 29]. Available from: [https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125](https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125)
-
-
-
-
-
-
-
-
-
 
