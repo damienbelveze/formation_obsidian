@@ -31,6 +31,11 @@
 ##
 ##
 ##fd6a9f26a06ea3bc99616d4851b372ba
+
+# permettre l'exécution du programme en local
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
 # présentation du logiciel
 
 $PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'

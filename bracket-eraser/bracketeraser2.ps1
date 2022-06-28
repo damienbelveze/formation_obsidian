@@ -58,16 +58,37 @@ If(!(test-path $path\mypdf))
       New-Item -ItemType Directory -Force -Path $path\mypdf
 }
 
-# identification du fichier qui comporte les références bibliographiques
-
-$biblio = @(Get-ChildItem -recurse | where {$_.extension -eq ".bib"} | Out-GridView -Title 'sélectionner un fichier de références' -PassThru)
-
-read-host "appuyer sur Enter pour continuer..."
-
 # sélection de la note à exporter en PDF
 
 $file = @(Get-ChildItem -recurse | where {$_.extension -eq ".md"} | Out-GridView -Title 'sélectionner une note à convertir' -PassThru)
 $filename = $file.basename
+
+
+
+
+$Answer = Read-Host -Prompt 'Voulez-vous charger une feuille de style CSL (o/n)'
+    }
+    Until ($Answer -eq 'o' -or $Answer -eq 'n')
+}
+
+if ($answer -eq 'o' ) {
+
+$FileBrowser = New-Object System.Windows.Forms.OpenFileDialog -Property @{
+    InitialDirectory = [Environment]::GetFolderPath('Desktop')
+    Filter = 'Documents (*.csl)|*.csl')
+$null = $FileBrowser.ShowDialog()
+$biblio = $FileBrowser.Filename;
+}
+else {
+
+# identification du fichier qui comporte les références bibliographiques
+
+$biblio = @(Get-ChildItem -recurse | where {$_.extension -eq ".bib"} | Out-GridView -Title 'sélectionner un fichier de références' -PassThru)
+
+}
+
+read-host "appuyer sur Enter pour continuer..."
+
 
 # si le dossier csl n'existe pas encore dans le répertoire de notes, il sera créé automatiquement
 # dans ce cas, on y chargera automatiquement depuis le site de Zotero trois feuilles de style (ieee, nature et Vancouver)
